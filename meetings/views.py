@@ -17,7 +17,7 @@ class MeetApi(viewsets.ModelViewSet):
         for obj in pair_list:
             flag = False
             if (str(obj.doctor) == str(request.data.get("doctor")) and str(obj.patient) == str(request.data.get("patient")) and str(obj.meeting_date) == str(request.data.get("meeting_date"))):
-                raise ValidationError('You have already appointment on that day')
+                raise ValidationError('You already have an appointment on that day')
         else:
             return super().create(request)
             
