@@ -9,3 +9,4 @@ router.register("list", views.MeetApi, basename="list")
 urlpatterns = [
     path('', include(router.urls)),
 ]
+

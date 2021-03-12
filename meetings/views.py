@@ -19,6 +19,3 @@ class MeetApi(viewsets.ModelViewSet):
                 raise ValidationError('You already have an appointment on that day')
         else:
             return super().create(request)
-            
-    
-    
