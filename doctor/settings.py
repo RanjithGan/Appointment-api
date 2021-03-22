@@ -25,7 +25,7 @@ SECRET_KEY = '^f%gd+b9c(pey%g5w$=rolej50hl5c@=_7c^-$io_j#hjd+&1+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','meetings-rg.herokuapp.com']
 
 
 # Application definition
